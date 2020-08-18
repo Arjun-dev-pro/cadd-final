@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<title>Consulting</title>
+
+	<style type="text/css">
+		
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+.bg_transparent
+{
+  background: transparent;
+}
+.text_orange
+{
+  color:white;
+}
+
+h1,h2
+{
+  color: orange;
+}
+
+.color_orange
+{
+  background: orange;
+  transition:background 0.5s;
+}
+
+.color_orange:hover
+{
+  background: yellow;
+}
+.navbar a
+{
+  color:black;
+}
+
+
+		.client_slide
+		{
+			height:54px;
+			width: 54px;
+			border-radius: 100px; 
+		}
+
+		body {
+
+      background: black;
+      
+      font-size: 1.3rem;
+}
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.secDiv
+{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.border_orange
+{
+  border: 5px solid orange;
+  border-radius: 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247, 249, 250, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color:white;
+
+}
+
+ .list-group .list-group-item, .list-group .list-group-item a
+{
+  text-decoration: none;
+  color: orange;
+}
+
+.list-group .list-group-item:hover, .list-group .list-group-item a:hover
+{
+  text-decoration: none;
+  color: blue;
+}
+
+.list-group .list-group-item
+{
+  background: black;
+  color: orange;
+  transition: all 0.5s;
+}
+.list-group .list-group-item:hover
+{
+  background: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  color:blue;
+}
+.gallery
+{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.gallery img
+{
+  height:350px;
+  width:450px;
+}
+.top{
+padding-top:100px;
+}
+
+section img
+{
+  transition: transform 1s ease;
+
+}
+
+section:hover img
+{
+  filter: blur(10px);
+  transform: scale(0.9);
+}
+section img:hover
+{
+  filter:blur(0px);
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+.anime
+{
+  animation-delay: 0s;
+  animation-duration: 2s;
+}
+
+
+.drop_hover:hover .dropdown-menu
+{
+  display: block;
+}
+
+.navbar li a
+{
+  font-size: 0.9em;
+  transition: all 0.5s ease;
+}
+.navbar li a:hover
+{
+  font-size: 1em;
+  color: green;
+
+}
+.footer p
+{
+  color: white;
+}
+.footer h3
+{
+  color: orange;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+	<!-- start of header-->
+
+<div class="d-flex flex-column flex-md-row align-items-center p-0 px-md-4 mb-3 color_orange border-bottom shadow-sm fixed-top">
+	<div class = "container p-0">
+	<nav class="navbar navbar-expand-lg p-0">
+  <a class="navbar-brand" href="#">UPK</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item px-2">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+     <li class="nav-item dropdown drop_hover px-2">
+        <a class="nav-link " href="Training.html">
+         CADD TRAINING
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="Training.html">Architectural</a>
+          <a class="dropdown-item" href="Training.html">Structural</a>
+          <a class="dropdown-item" href="Training.html">Project planning</a>
+          <a class="dropdown-item" href="Training.html">BIM</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown drop_hover px-2">
+        <a class="nav-link " href="Consulting.html">
+         CADD CONSULTING
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#archi">Architectural</a>
+          <a class="dropdown-item" href="#structural">Structural</a>
+          <a class="dropdown-item" href="#project">Project planning</a>
+          <a class="dropdown-item" href="#bim">BIM</a>
+        </div>
+      </li>
+       <li class="nav-item px-2">
+        <a class="nav-link" href="Construction.html">CONSTRUCTION</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link" href="#contact">CONTACT US</a>
+      </li>
+    </ul>
+  </div>
+  
+    </nav>
+  </div>
+</div>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active animate__fadeInLeft animate_style">
+      <img class="d-block w-100" src="interiorslide1.jpg" height="720px" width="1280px" alt="First slide">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <h1 class="animate__bounceInDown animate_style " >HI DA MAKKA</h1>
+      </div>
+    </div>
+    <div class="carousel-item animate__fadeInLeft animate_style">
+      <img class="d-block w-100" src="interiorslide2.jpg" height="720px" width="1280px" alt="Second slide">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <h1 class="animate__bounceInDown animate_style " >HI DA MAKKA</h1>
+      </div>
+    </div>
+    <div class="carousel-item animate__fadeInLeft animate_style">
+      <img class="d-block w-100" src="exteriorslide1.jpg" height="720px" width="1280px"alt="Third slide">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <h1 class="animate__bounceInDown animate_style " >HI DA MAKKA</h1>
+      </div>
+    </div>
+    <div class="carousel-item animate__fadeInLeft animate_style">
+      <img class="d-block w-100" src="exteriorslide2.jpg"height="720px" width="1280px" alt="Third slide">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <h1 class="animate__bounceInDown animate_style " >HI DA MAKKA</h1>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+
+<div class=" text_orange top">
+<div class="container ">
+	<div class="container my-2">
+		<div class="row ">
+			<div class="container text-center">
+			<h1>
+				UPK Designs
+			</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container secDiv ">
+		<div class="row  justify-content-center mr-2 ">
+			
+				<p>
+					We are a leading architectural design & detailing, structural design & detailing, project planning & estimation company in India.
+          We have completed 10 years in the industry and worked on 12000+ projects worldwide. We provide high quality modelling and rendering service to our clients across the globe. Our company is providing all kinds of services to real estate and construction industry including 2D Architectural plans, 2D structural plans, 3D floor plans, 3D interior designs, 3D exterior designs, Project planning and estimation to the clients.
+				</p>
+			</div>
+			
+				<div class="col-md-6">
+				
+<!-- Sliding screen-->
+
+	<div id="carouselExampleIndicators" class="carousel slide border_orange" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="civil.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+  <!-- END OF SLIDING SCREEN-->
+			
+			</div>
+		</div>
+	</div>
+
+
+</div>
+<hr>
+<div class="container-fluid text_orange">
+	<div class="row">
+	<div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1000">
+		<div class="container text-center">
+			<h1>TEAM</h1>
+			<p>
+Our team of Professional Engineers and CAD Technicians are committed to delivering the best Detailing and CAD services in the industry. Our teams of experts, each with their own specialty, enables us to provide our clients with field specific service for any type of detailing required</p>
+		</div>
+	</div>
+	<div class="col-md-4" data-aos="fade-up-right" data-aos-duration="2000">
+		<div class="container text-center">
+			<h1>SKILLS</h1>
+			<p>
+Customer loyalty and trust are very important to us. We build on this trust by providing the best quality product, service and project coordination available. We are in constant contact with our clients on a personal level to insure all project goals are being met.</p>
+</div>
+	</div>
+	<div class="col-md-4" data-aos="fade-up-right" data-aos-duration="3000">
+		<div class="container text-center">
+			<h1>CREATION</h1>
+			<p>
+The supreme creator created the world 3 dimentionally with infinite number of creatures with different qualities. Well, We are doing similar
+to that on our computers. WOW!!! This gives very godly feeling.</p>
+		</div>
+	</div>
+	</div>
+</div>
+<hr >
+<!-- START OF CLIENT SLIDING WINDOW-->
+<div class="container-fluid  text_orange" style="height: 220px;" data-aos="zoom-in" data-aos-duration="2000">
+	<div class="row d-flex justify-content-center">
+		<h1>
+			CLIENTS TESTIMONIAL
+		</h1>
+	</div>
+	<div class="row d-flex justify-content-center" >
+		<div id="clientSlider" class="carousel slide w-100" data-ride="carousel">
+  <ol class="carousel-indicators ">
+    <li data-target="#clientSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#clientSlider" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+   <div class="carousel-item active">
+    	<div class="row d-flex justify-content-center">
+      <img class="client_slide" src="1.jpg" alt="First slide">
+         </div>
+         <div class="container d-flex justify-content-center mb-5" >
+         <div class="row d-flex justify-content-center">
+         	<p>
+         		She had come to the conclusion that you could tell a lot about a person by their ears. The way they stuck out and the size of the earlobes could give you wonderful insights into the person.into the person. Of course, she couldn't scientifically prove any of this, but that didn't matter to her. Before anything else, she would sizealking to 
+         	</p>
+         </div></div>
+  </div>
+
+    <div class="carousel-item">
+    	<div class="row d-flex justify-content-center">
+      <img class="client_slide" src="1.jpg" alt="First slide">
+         </div>
+         <div class="container d-flex justify-content-center mb-5">
+         <div class="row d-flex justify-content-center">
+         	<p>
+         		She had come to the conclusion that you could tell a lot about a person by their ears. The way they stuck out and the size of the earlobes could give you wonderful insights into the person. Of course, she couldn't scientifically prove any of this, but that didn't matter to her. Before anything else, she would sizealking to
+         	</p>
+         </div></div>
+  </div>
+
+	</div>
+	<a class="carousel-control-prev" href="#clientSlider" style="width: 300px;" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" style="opacity: 0.2;" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#clientSlider" style="width: 300px;" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" style="opacity: 0.2" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div></div></div>
+<hr id="archi">
+<br ><br>
+
+<div class="container text_orange mb-3" >
+	<div class="container my-3" data-aos="zoom-out-down" data-aos-duration="1000">
+		<div class="row">
+			<div class="container text-center" >
+			<h1>
+				ARCHITECTURAL SERVICES
+			</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" >
+		<div class="row">
+			<div class="col-md-6" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
+				<ul class="list-group">
+          <li class="list-group-item"><a href="#2d_floor">2D floor plans</a></li>
+          <li class="list-group-item"><a href="#3d_floor">3D floor plans</a></li>
+          <li class="list-group-item"><a href="#3d_interior">3D interior design</a></li>
+          <li class="list-group-item"><a href="#2d_exterior">3D exterior design</a></li>
+          <li class="list-group-item"><a href="#3d_walk">3D walk-through animation</a></li>
+          <li class="list-group-item"><a href="#2d_rendering">2D rendering services</a></li>
+        </ul>
+			</div>
+			
+				<div class="col-md-6" class="col-md-6" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="2000">
+				
+<!-- Sliding screen-->
+
+	<div id="carouselExampleIndicators" class="carousel slide border_orange" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="civil.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+  <!-- END OF SLIDING SCREEN-->
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr id="structural">
+<br ><br>
+<div class="container text_orange mb-3">
+  <div class="container" data-aos="zoom-out-down" data-aos-duration="1000">
+    <div class="row">
+      <div class="container text-center my-3" >
+      <h1>
+        STRUCTURAL SERVICES
+      </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="structural">
+    <div class="row">
+      <div class="col-md-6" class="col-md-6" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        <ul class="list-group">
+          <li class="list-group-item ">2D structural plans</li>
+          <li class="list-group-item">Concrete and steel member detailing</li>
+          <li class="list-group-item">Reinforced concrete detailing</li>
+          <li class="list-group-item">Staircase detailing</li>
+          <li class="list-group-item">Fabrication drawings</li>
+          <li class="list-group-item">Rebar design and detailing</li>
+        </ul>
+      </div>
+      
+        <div class="col-md-6"  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="2000">
+        
+<!-- Sliding screen-->
+
+  <div id="carouselExampleIndicators" class="carousel slide border_orange" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="civil.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+  <!-- END OF SLIDING SCREEN-->
+      
+      </div>
+    </div>
+  </div>
+</div>
+<hr id="project">
+<br ><br>
+<div class="container text_orange mb-3" id="project">
+  <div class="container" data-aos="zoom-out-down" data-aos-duration="1000">
+    <div class="row">
+      <div class="container text-center my-3" >
+      <h1>
+        PROJECT PLANNING AND ESTIMATION
+      </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" class="col-md-6" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        <ul class="list-group">
+          <li class="list-group-item ">Project cost estimation</li>
+          <li class="list-group-item">Quantity take-off</li>
+          <li class="list-group-item">Level of development</li>
+          <li class="list-group-item">On-going project co-ordination</li>
+          <li class="list-group-item">Project planning and Duration</li>
+          
+        </ul>
+      </div>
+      
+        <div class="col-md-6" class="col-md-6" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="2000">
+        
+<!-- Sliding screen-->
+
+  <div id="carouselExampleIndicators" class="carousel slide border_orange" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="civil.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+  <!-- END OF SLIDING SCREEN-->
+      
+      </div>
+    </div>
+  </div>
+</div>
+<hr id="bim">
+<br ><br>
+
+<div class="container text_orange mb-3">
+  <div class="container" data-aos="zoom-out-down" data-aos-duration="1000">
+    <div class="row">
+      <div class="container text-center my-3" id="bim">
+      <h1>
+        BIM SERVICES
+      </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" class="col-md-6" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        <ul class="list-group">
+          <li class="list-group-item ">BIM modelling service</li>
+          <li class="list-group-item">Clash detection</li>
+          <li class="list-group-item">BIM co-ordination</li>
+          <li class="list-group-item">BIM 4D simulation</li>
+          <li class="list-group-item">Revit family creation services</li>
+          
+        </ul>
+      </div>
+      
+        <div class="col-md-6" class="col-md-6" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="2000">
+        
+<!-- Sliding screen-->
+
+  <div id="carouselExampleIndicators" class="carousel slide border_orange" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="civil.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="civil.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+  <!-- END OF SLIDING SCREEN-->
+      
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="border_orange">
+
+
+
+<div class="container text_orange "><section data-aos="zoom-in-up" data-aos-duration="1000">
+  <h1 class="text-center">ARCHITECTURAL SERVICES</h1>
+  <p>
+    In this nature, there is imbedded a desire to express something of itself in the cosmos. But this desire is not for its own benefit, for the Perfect has nothing to gain. In all manifested creatures, desire seeks self-benefit, obvious or hidden; not so in the World-Mind. Its activity exists only for the benefit of this multitude of creatures.
+  </p>
+  <p>
+    In this nature, there is imbedded a desire to express something of itself in the cosmos. But this desire is not for its own benefit, for the Perfect has nothing to gain. In all manifested creatures, desire seeks self-benefit, obvious or hidden; not so in the World-Mind. Its activity exists only for the benefit of this multitude of creatures.
+  </p></section>
+  <hr id="2d_floor"><br>
+<br ><br>
+
+  <h2 class=" anime" data-aos="fade-up-right" data-aos-duration="2000">2D FLOOR PLANS :</h2>
+  <p class=" anime" data-aos="fade-up-left" data-aos-duration="2000">
+    But this desire is not for its own benefit, for the Perfect has nothing to gain. In all manifested creatures, desire seeks self-benefit, obvious or hidden; not so in the World-Mind. Its activity exists only for the benefit of this multitude of creatures.
+  </p>
+
+</div>
+<div class="container-fluid my-3 " data-aos="fade-right" data-aos-duration="2000">
+    <section class="gallery justify-content-center">
+      <img src="pic1.jpg">
+      <img src="pic2.jpg">
+      <img src="pic3.jpg">
+      <img src="pic4.jpg">
+      <img src="pic5.jpg">
+      <img src="pic6.jpg">
+    </section>
+  </div>
+<hr id="3d_floor"><br>
+<br ><br>
+<div class="container text_orange anime " data-aos="fade-right" data-aos-duration="2000">
+  <h2>3D FLOOR PLANS :</h2>
+  <p>
+    But this desire is not for its own benefit, for the Perfect has nothing to gain. In all manifested creatures, desire seeks self-benefit, obvious or hidden; not so in the World-Mind. Its activity exists only for the benefit of this multitude of creatures.
+  </p>
+</div>
+<div class="container-fluid my-3 anime" data-aos="fade-right" data-aos-duration="2000">
+    <section class="gallery justify-content-center">
+      <img src="pic1.jpg">
+      <img src="pic2.jpg">
+      <img src="pic3.jpg">
+      <img src="pic4.jpg">
+      <img src="pic5.jpg">
+      <img src="pic6.jpg">
+    </section>
+  </div>
+<hr id="3d_interior"><br>
+<br ><br>
+  <div class="container text_orange " data-aos="fade-left" data-aos-duration="2000">
+  <h2>3D INTERIOR DESIGN :</h2>
+  <p>
+    But this desire is not for its own benefit, for the Perfect has nothing to gain. In all manifested creatures, desire seeks self-benefit, obvious or hidden; not so in the World-Mind. Its activity exists only for the benefit of this multitude of creatures.
+  </p>
+</div>
+<div class="container-fluid my-3" data-aos="fade-left" data-aos-duration="2000">
+    <section class="gallery justify-content-center">
+      <img src="pic1.jpg">
+      <img src="pic2.jpg">
+      <img src="pic3.jpg">
+      <img src="pic4.jpg">
+      <img src="pic5.jpg">
+      <img src="pic6.jpg">
+    </section>
+  </div>
+<hr id="2d_exterior"><br>
+<br ><br>
+  <div class="container text_orange " data-aos="fade-up-right" data-aos-duration="2000">
+  <h2>2D EXTERIOR DESIGN :</h2>
+  <p>
+    But this desire is not for its own benefit, for the Perfect has nothing to gain. In all manifested creatures, desire seeks self-benefit, obvious or hidden; not so in the World-Mind. Its activity exists only for the benefit of this multitude of creatures.
+  </p>
+</div>
+<div class="container-fluid my-3" data-aos="fade-up-right" data-aos-duration="2000">
+    <section class="gallery justify-content-center">
+      <img src="pic1.jpg">
+      <img src="pic2.jpg">
+      <img src="pic3.jpg">
+      <img src="pic4.jpg">
+      <img src="pic5.jpg">
+      <img src="pic6.jpg">
+    </section>
+  </div>
+  <hr id="3d_walk"><br>
+<br ><br>
+  <div class="container text_orange " data-aos="fade-up-left" data-aos-duration="2000">
+  <h2>3D WALK-THROUGH ANIMATION :</h2>
+  <p>
+    But this desire is not for its own benefit, for the Perfect has nothing to gain. In all manifested creatures, desire seeks self-benefit, obvious or hidden; not so in the World-Mind. Its activity exists only for the benefit of this multitude of creatures.
+  </p>
+</div>
+<div class="container-fluid my-3" data-aos="fade-up-left" data-aos-duration="2000">
+    <section class="gallery justify-content-center">
+      <img src="pic1.jpg">
+      <img src="pic2.jpg">
+      <img src="pic3.jpg">
+      <img src="pic4.jpg">
+      <img src="pic5.jpg">
+      <img src="pic6.jpg">
+    </section>
+  </div>
+<hr id="2d_rendering"><br>
+<br ><br>
+   <div class="container text_orange " data-aos="fade-down-right" data-aos-duration="2000">
+  <h2>2D RENDERING SERVICES :</h2>
+  <p>
+    But this desire is not for its own benefit, for the Perfect has nothing to gain. In all manifested creatures, desire seeks self-benefit, obvious or hidden; not so in the World-Mind. Its activity exists only for the benefit of this multitude of creatures.
+  </p>
+</div>
+<div class="container-fluid my-3" data-aos="fade-down-right" data-aos-duration="2000">
+    <section class="gallery justify-content-center">
+      <img src="pic1.jpg">
+      <img src="pic2.jpg">
+      <img src="pic3.jpg">
+      <img src="pic4.jpg">
+      <img src="pic5.jpg">
+      <img src="pic6.jpg">
+    </section>
+  </div>
+
+
+<hr class="border_orange">
+<div class="container-fluid footer " id="contact">
+  
+ <h1 class="text-center">CONTACT US</h1>
+ <div class="container">
+  <div class="row">
+    <div class="container">
+    <div class="d-flex justify-content-center">
+      
+      <ul class="list-group list-group-horizontal">
+      <a class="list-group-item back_black" href="#"><img src="facebook.png"></a>
+  <a class="list-group-item back_black" href="#"><img src="twitter.png"></a>
+  <a class="list-group-item back_black" href="#"><img src="whatsapp.png"></a>
+  <a class="list-group-item back_black" href="#"><img src="instagram.png"></a>
+      </ul>
+
+
+    </div></div>
+  </div>
+</div>
+  <div class="row m-5">
+<div class="col-md-1"></div>
+  <div class="col-md-2 m-0 p-0">
+    <div class="container m-0 p-2">
+     
+      <h3> HEAD OFFICE</h3>
+      <p style="text-align: center;">2nd Floor, selva tower, opposite to GANGA lodge, Alexandra press road, Vepamood junction, Nagercoil-1</p>
+    </div>
+  </div>
+<div class="col-md-3 m-0 p-1">
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&height=300&hl=en&q=bim%20cadd%20Nagercoil+(bim%20cadd)&t=&z=18&ie=UTF8&iwloc=B&output=embed"></iframe> <a href='https://embedmaps.org/'>Embedmaps.org</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=aee615d7f4c3beb6fa6fefa4fbaadf207f9e49bb'></script>
+</div>
+
+<div class="col-md-2 m-0 p-0">
+    <div class="container m-0 p-2">
+     
+      <h3> BRANCH OFFICE</h3>
+      <p style="text-align: center;">2nd Floor, Matha complex,near BSNL office, Neyyur hospital road, Monday market, 629802</p>
+    </div>
+  </div>
+<div class="col-md-3 m-0 p-1">
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=300&amp;hl=en&amp;q=bim%20cadd%20Thingal%20Nagar+(bim%20cadd)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://embedmaps.org/'></a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=337850b530bb48897019eb35fb4ff00b8ca5758f'></script>
+</div>
+<div class="col-md-1"></div>
+  
+  </div>
+  
+<hr>
+
+
+
+  
+
+</div>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
